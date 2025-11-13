@@ -3,7 +3,7 @@ import { useState } from "react";
 import sessionImage from "../assets/session-logo.jpg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PodcastsIcon from '@mui/icons-material/Podcasts';
 
 export default function Footer() {
@@ -49,23 +49,23 @@ export default function Footer() {
         <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
           {/* Links */}
           <Box sx={{ display: "flex", gap: 2 }}>
-            {["FAQs", "Terms", "About", "Feedback"].map((link) => (
-              link === "Feedback" ? 
-              <Button
-                key={link}
-                component="a"
-                href="https://forms.gle/mfKj3A27DV2xmcCd6"
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                  color: "#fff",
-                  fontSize: { xs: "0.8rem", md: "0.9rem" },
-                  textTransform: "none",
-                }}
-              >
-                {link}
-              </Button>
-              :
+            {["FAQs", "Terms", "About"].map((link) => (
+              // link === "Feedback" ? 
+              // <Button
+              //   key={link}
+              //   component="a"
+              //   href="https://forms.gle/mfKj3A27DV2xmcCd6"
+              //   target="_blank"
+              //   rel="noopener noreferrer"
+              //   sx={{
+              //     color: "#fff",
+              //     fontSize: { xs: "0.8rem", md: "0.9rem" },
+              //     textTransform: "none",
+              //   }}
+              // >
+              //   {link}
+              // </Button>
+              // :
               <Button
                 key={link}
                 sx={{
@@ -90,14 +90,14 @@ export default function Footer() {
             >
               <PodcastsIcon sx={{ fontSize: 32 }} /> {/* increased size */}
             </IconButton>
-            <IconButton
+            {/* <IconButton
               href="https://www.linkedin.com/in/saranya-606374260/"
               target="_blank"
               rel="noopener noreferrer"
               sx={{ color: "#fff" }}
             >
               <LinkedInIcon sx={{ fontSize: 32 }} />
-            </IconButton>
+            </IconButton> */}
             <IconButton
               href="https://www.youtube.com/@SaruInSync"
               target="_blank"
